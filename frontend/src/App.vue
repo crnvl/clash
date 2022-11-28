@@ -34,6 +34,20 @@ fieldData[field] = true;
         <FieldVue :active="fieldData[7]" />
       </div>
     </div>
+    <div class="flex justify-evenly items-center w-screen h-1/6 text-white font-bold text-2xl">
+      <button class="h-fit bg-green-400 rounded-md px-2 py-2 active:scale-95 transition ease-in-out">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
+          class="w-24 h-12">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+        </svg>
+      </button>
+      <button class="h-fit bg-red-400 rounded-md px-2 py-2 active:scale-95 transition ease-in-out">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
+          class="w-24 h-12">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
+        </svg>
+      </button>
+    </div>
     <p class="text-white font-bold underline"><a href="https://github.com/angelsflyinhell/clash">GitHub</a></p>
   </div>
 </template>
