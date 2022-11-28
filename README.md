@@ -2,4 +2,10 @@
 [![Rust](https://github.com/angelsflyinhell/clash/actions/workflows/rust.yml/badge.svg)](https://github.com/angelsflyinhell/clash/actions/workflows/rust.yml)
 
 # clash
-more info coming soon.
+fun stack using:
+- vue
+- typescript
+- tailwind
+- rust
+- actix web
+- redis
