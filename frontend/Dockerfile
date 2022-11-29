@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Copy the files and install dependencies
 COPY . .
-RUN npm install && npm build
+RUN npm install && npm run build
 
 FROM nginx:alpine as production-build
 COPY ./.nginx/nginx.conf /etc/nginx/nginx.conf
