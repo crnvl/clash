@@ -12,7 +12,7 @@ fun stack using:
 
 # Run with Docker
 ```console
-docker pull ghcr.io/angelsflyinhell/client_backend:latest
+docker pull ghcr.io/angelsflyinhell/clash_backend:latest
 docker run -p 3004:3000 -d ghcr.io/angelsflyinhell/clash_backend
 
 docker pull ghcr.io/angelsflyinhell/clash_frontend:latest
