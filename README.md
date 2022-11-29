@@ -9,3 +9,12 @@ fun stack using:
 - rust
 - actix web
 - redis
+
+# Run with Docker
+```console
+docker pull ghcr.io/angelsflyinhell/client_backend:latest
+docker run -p 3004:3000 -d clash_backend
+
+docker pull ghcr.io/angelsflyinhell/clash_frontend:latest
+docker run -p 3003:80 -d clash_frontend
+```
