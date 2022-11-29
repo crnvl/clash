@@ -6,10 +6,6 @@ on:
     types:
       - completed
 
-defaults:
-  run:
-    working-directory: backend
-
 jobs:
   build:
     name: Deployment
@@ -23,6 +19,7 @@ jobs:
       with:
         image: clash_backend
         tags: latest
+        dockerfile: 'backend/Dockerfile'
         directory: 'backend'
         registry: ghcr.io
         username: ${{ github.actor }}
