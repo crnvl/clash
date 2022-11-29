@@ -6,10 +6,6 @@ on:
     types:
       - completed
 
-defaults:
-  run:
-    working-directory: frontend
-
 jobs:
   build:
     name: Deployment
@@ -23,6 +19,7 @@ jobs:
       with:
         image: client_frontend
         tags: latest
+        directory: 'frontend'
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}

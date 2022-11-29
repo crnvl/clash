@@ -23,6 +23,7 @@ jobs:
       with:
         image: clash_backend
         tags: latest
+        directory: 'backend'
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
