@@ -14,12 +14,13 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
+    - uses: actions/checkout@v3
     - name: Build and push the Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: clash_backend
         tags: latest
-        dockerfile: '../../backend/Dockerfile'
+        dockerfile: 'backend/Dockerfile'
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
