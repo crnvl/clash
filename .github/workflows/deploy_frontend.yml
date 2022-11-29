@@ -21,7 +21,7 @@ jobs:
         image: client_frontend
         tags: latest
         dockerfile: 'frontend/Dockerfile'
-        directory: 'backend'
+        directory: 'frontend'
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
