@@ -19,8 +19,7 @@ jobs:
       with:
         image: clash_backend
         tags: latest
-        dockerfile: 'backend/Dockerfile.dir'
-        directory: 'backend'
+        dockerfile: 'backend/Dockerfile'
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
