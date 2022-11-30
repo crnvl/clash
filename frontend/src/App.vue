@@ -10,7 +10,7 @@ fieldData[field] = true;
 </script>
 
 <template>
-  <div class="flex flex-col justify-evenly items-center text-center w-screen bg-primary h-screen p-8">
+  <div class="flex flex-col justify-evenly items-center text-center w-screen bg-primary h-full p-8">
     <h1 class="text-4xl font-bold text-white top-0 p-4">ID: {{ id }}</h1>
     <div class="flex flex-col h-5/6">
       <div class="flex flex-row h-1/4 p-8 w-screen">
