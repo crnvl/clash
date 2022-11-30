@@ -2,7 +2,7 @@
 import FieldVue from './components/Field.vue';
 
 const id = "232"
-const field = 5;
+const field = 0;
 
 const fieldData: boolean[] = new Array(9).fill(false);
 fieldData[field] = true;
