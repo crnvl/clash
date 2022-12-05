@@ -1,7 +1,3 @@
-
-import * as dotenv from 'dotenv'
-dotenv.config();
-
 import express from 'express';
 import { connect } from 'mongoose';
 import { User } from '../models/userModel';
