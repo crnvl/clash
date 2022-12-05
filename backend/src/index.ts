@@ -2,7 +2,7 @@ import express from 'express';
 import { connect } from 'mongoose';
 import { User } from '../models/userModel';
 const app = express();
-const port = 3000;
+const port = 3004;
 const domain = 'localhost';
 
 app.use(express.json());
