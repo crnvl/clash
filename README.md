@@ -7,14 +7,12 @@ fun stack using:
 - vue
 - typescript
 - tailwind
-- rust
-- actix web
-- redis
+- mongodb
 
 # Run with Docker
 ```console
 docker pull ghcr.io/angelsflyinhell/clash_backend:latest
-docker run -p 3004:3000 -d ghcr.io/angelsflyinhell/clash_backend
+docker run --net host --env MONGO_URI=$MONGO_URI -d ghcr.io/angelsflyinhell/clash_backend
 
 docker pull ghcr.io/angelsflyinhell/clash_frontend:latest
 docker run -p 3003:80 -d ghcr.io/angelsflyinhell/clash_frontend
