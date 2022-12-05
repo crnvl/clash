@@ -1,10 +1,10 @@
-FROM rust:latest
+FROM node:latest
 
 WORKDIR /usr/src
 COPY . .
 
-RUN cargo install --path .
+RUN npm install --production
 EXPOSE 3000
 
-CMD ["cargo", "run"]
+CMD ["npm", "start"]
 # docker run -p 3004:3000 -d clash_backend
