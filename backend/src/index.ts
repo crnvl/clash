@@ -39,12 +39,10 @@ app.post('/create', async (req, res) => {
 
 app.get('/all', async (req, res) => {
     const idSet = JSON.parse(await client.get('idSet') ?? '[]');
-
     const data: any[] = [];
     for (const id of idSet) {
         const points = Number.parseInt(await client.get(id) ?? '0');
         data.push({ id, points });
     }
-
     res.send(data);
 });
