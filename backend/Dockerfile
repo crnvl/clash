@@ -1,13 +1,10 @@
-FROM node:latest
-ENV NODE_ENV=production
+# stage1 as builder
+FROM node:18-alpine as builder
 
 WORKDIR /usr/src/
 
-COPY ["package.json", "package-lock.json*", "./"]
-
-RUN npm install --production
-
+# Copy the files and install dependencies
 COPY . .
-
-CMD [ "npm", "run", "start" ]
+RUN npm install
+CMD ["npm", "run", "build"]
 # docker run -p 3004:3000 -d clash_backend
