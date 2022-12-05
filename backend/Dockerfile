@@ -9,5 +9,5 @@ RUN npm install --production
 
 COPY . .
 
-CMD [ "node", "server.js" ]
+CMD [ "npm", "run", "start" ]
 # docker run -p 3004:3000 -d clash_backend
