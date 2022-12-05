@@ -6,5 +6,5 @@ WORKDIR /usr/src/
 # Copy the files and install dependencies
 COPY . .
 RUN npm install
-CMD ["npm", "run", "build"]
+CMD ["npm", "run", "start"]
 # docker run -p 3004:3000 -d clash_backend
