@@ -1,5 +1,5 @@
 [![Frontend](https://github.com/angelsflyinhell/clash/actions/workflows/node.js.yml/badge.svg)](https://github.com/angelsflyinhell/clash/actions/workflows/node.js.yml)
-[![Rust](https://github.com/angelsflyinhell/clash/actions/workflows/rust.yml/badge.svg)](https://github.com/angelsflyinhell/clash/actions/workflows/rust.yml)
+[![Backend](https://github.com/angelsflyinhell/clash/actions/workflows/backend.yml/badge.svg)](https://github.com/angelsflyinhell/clash/actions/workflows/backend.yml)
 [![CodeQL](https://github.com/angelsflyinhell/clash/actions/workflows/codeql.yml/badge.svg)](https://github.com/angelsflyinhell/clash/actions/workflows/codeql.yml)
 
 # clash
