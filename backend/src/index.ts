@@ -67,3 +67,15 @@ app.post('/submit/:id/:type', async (req, res) => {
     await user.save();
     res.send({ success: true });
 });
+
+app.get('/field/:id', async (req, res) => {
+    const { id } = req.params;
+    const users = await User.find();
+
+    users.sort((a, b) => {
+        return b.score - a.score;
+    });
+
+    const position = users.findIndex((user) => user.userId === id);
+    res.json({ position: position });
+});
