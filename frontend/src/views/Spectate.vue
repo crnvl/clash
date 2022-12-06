@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { getAllUsers } from '@/utils/api';
 
 export default {
