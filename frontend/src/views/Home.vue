@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import router from '@/router';
+import { getField } from '@/utils/api';
 import FieldVue from '../components/Field.vue'
 
-const id = router.currentRoute.value.params.id;
-const field = 0
+const id = router.currentRoute.value.params.id as string;
+const field = parseInt((await getField(id)).position);
 
 const fieldData: boolean[] = new Array(9).fill(false)
 fieldData[field] = true

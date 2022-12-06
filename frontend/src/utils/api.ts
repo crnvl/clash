@@ -15,3 +15,7 @@ export function submitScore(id: string, type: string) {
         method: "POST",
     }).then((res) => res.json());
 }
+
+export function getField(id: string) {
+    return fetch(url + `/field/${id}`).then((res) => res.json());
+}
