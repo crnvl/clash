@@ -1,16 +1,17 @@
 <script setup lang="ts">
-import FieldVue from './components/Field.vue';
+import router from '@/router';
+import FieldVue from '../components/Field.vue'
 
-const id = "232"
-const field = 0;
+const id = router.currentRoute.value.params.id;
+const field = 0
 
-const fieldData: boolean[] = new Array(9).fill(false);
-fieldData[field] = true;
+const fieldData: boolean[] = new Array(9).fill(false)
+fieldData[field] = true
 
 </script>
 
 <template>
-  <h1 class="text-4xl font-bold text-white top-0 p-4">ID: {{ id }}</h1>
+  <h1 class="text-4xl font-bold text-white top-0 p-4">{{ id }}</h1>
   <div class="flex flex-col h-5/6">
     <div class="flex flex-row h-1/4 p-8 w-screen">
       <FieldVue :active="fieldData[0]" />
