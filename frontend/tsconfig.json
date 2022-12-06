@@ -12,6 +12,7 @@
     "useDefineForClassFields": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "experimentalDecorators": true,
     "types": [
       "webpack-env"
     ],

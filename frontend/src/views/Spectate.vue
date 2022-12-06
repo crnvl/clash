@@ -11,12 +11,15 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 import { getAllUsers } from '@/utils/api';
 
-export default {
-  data: () => ({
-    users: []
-  }),
+export default defineComponent({
+  data() {
+    return {
+      users: []
+    }
+  },
   methods: {
     async getData() {
       this.users = await getAllUsers();
@@ -25,6 +28,6 @@ export default {
   created() {
     this.getData();
   }
-}
+})
 
 </script>

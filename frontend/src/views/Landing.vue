@@ -25,13 +25,14 @@
 
 <script lang="ts">
 import { createUser } from '@/utils/api';
+import { defineComponent } from 'vue';
 
-export default {
+export default defineComponent({
   methods: {
     async createPlayer() {
       const id = (await createUser()).id;
       this.$router.push(`/${id}`);
     }
   }
-}
+})
 </script>
