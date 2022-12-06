@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { getAllUsers, submitScore } from '@/utils/api';
 
 export default {
