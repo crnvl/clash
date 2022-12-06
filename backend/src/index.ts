@@ -77,5 +77,5 @@ app.get('/field/:id', async (req, res) => {
     });
 
     const position = users.findIndex((user) => user.userId === id);
-    res.json({ position: position, total: users.length, users: users });
+    res.json({ position: position });
 });
