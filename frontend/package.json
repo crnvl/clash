@@ -11,11 +11,17 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "@types/axios": "^0.14.0",
+    "@types/vue": "^2.0.0",
+    "@types/vue-router": "^2.0.0",
+    "axios": "^1.2.1",
+    "register-service-worker": "^1.7.2",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
-    "@types/node": "^18.11.9",
+    "@types/node": "^18.11.11",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
