@@ -7,7 +7,6 @@ const field = 0
 
 const fieldData: boolean[] = new Array(9).fill(false)
 fieldData[field] = true
-
 </script>
 
 <template>
