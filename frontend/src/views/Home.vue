@@ -18,14 +18,14 @@ export default defineComponent({
     }
   },
   created() {
-    const id = router.currentRoute.value.params.id as string;
-    this.getData(this.fieldData, id);
+    this.$data.id = router.currentRoute.value.params.id as string;
+    this.getData(this.fieldData, this.$data.id);
   }
 })
 </script>
 
 <template>
-  <h1 class="text-4xl font-bold text-white top-0 p-4">{{ id }}</h1>
+  <h1 class="text-4xl font-bold text-white top-0 p-4">{{ $data.id }}</h1>
   <div class="flex flex-col h-5/6">
     <div class="flex flex-row h-1/4 p-8 w-screen">
       <div class="flex justify-center items-center w-2/4 bg-secondary rounded-md shadow-md">
