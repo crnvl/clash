@@ -13,6 +13,7 @@ export default defineComponent({
   methods: {
     async getData(fieldData: boolean[], id: any) {
       const field = (await getField(id)).position;
+      fieldData = new Array(8).fill(false)
       fieldData[field] = true;
       this.fieldData = fieldData;
     }
@@ -20,6 +21,8 @@ export default defineComponent({
   created() {
     this.$data.id = router.currentRoute.value.params.id as string;
     this.getData(this.fieldData, this.$data.id);
+
+    window.setInterval((async () => {this.getData(this.fieldData, this.$data.id)}), 5000);
   }
 })
 </script>
